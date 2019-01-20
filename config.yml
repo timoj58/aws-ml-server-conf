@@ -1,0 +1,257 @@
+base:
+ aws: True
+ aws_url: "https://s3.amazonaws.com/predictor-models/"
+ local: "/home/ubuntu/res/"
+ docker_host: "http://ip-172-31-19-54.ec2.internal"
+ train_path: "train/<type>/<key>/"
+ vocab_path: "vocab/<type>/<key>/"
+ country_results_train_history_file: "country-matches-train-history.json"
+ country_scores_train_history_file: "country-scores-train-history.json"
+ country_goals_train_history_file: "country-goals-train-history.json"
+ players_goals_train_history_file: "players-goals-train-history.json"
+ players_first_goal_train_history_file: "players-first-goal-train-history.json"
+ players_last_goal_train_history_file: "players-last-goal-train-history.json"
+ vocab_history_file: "vocab_history.json"
+
+learning:
+ match_result:
+  default:
+          batch_size: 100
+          steps: 1000
+          months_per_cycle: 2
+          start_day: 1
+          start_month: 8
+          start_year: 2009
+          end_day: 26
+          end_month: 10
+          end_year: 2018
+          hash_bins: 10000
+          hidden_units: [10, 20, 10]
+          aws_debug: False
+          historic: False
+          evaluate: False
+
+  england:
+          batch_size: 250
+          months_per_cycle: 4
+          hash_bins: 25000
+          hidden_units: [10, 20, 10]
+
+  spain:
+        batch_size: 150
+
+  france:
+         batch_size: 150
+         historic: False
+         evaluate: False
+
+  scotland:
+           batch_size: 200
+           months_per_cycle: 4
+  italy:
+        batch_size: 150
+        historic: False
+        evaluate: False
+
+  german:
+         batch_size: 150
+         historic: False
+         evaluate: False
+ 
+  greece:
+         months_per_cycle: 4
+ 
+  holland:
+          months_per_cycle: 4
+  denmark:
+          months_per_cycle: 4
+  sweden:
+          months_per_cycle: 4
+  norway: 
+          months_per_cycle: 4
+  turkey:
+          months_per_cycle: 4
+  russia:
+          months_per_cycle: 4 
+  portugal:
+           months_per_cycle: 4
+  belgium:
+          months_per_cycle: 4
+ 
+
+ match_score:
+  default:
+          batch_size: 100
+          steps: 1000
+          months_per_cycle: 2
+          start_day: 1
+          start_month: 8
+          start_year: 2009
+          end_day: 26
+          end_month: 10
+          end_year: 2018
+          hash_bins: 10000
+          hidden_units: [10, 20, 10]
+          aws_debug: False
+          historic: False
+          evaluate: False
+
+  england:
+          batch_size: 250
+          months_per_cycle: 4
+          hash_bins: 25000
+          hidden_units: [10, 20, 10]
+
+  spain:
+         batch_size: 150
+
+  france:
+          batch_size: 150
+
+  scotland:
+            batch_size: 200
+            months_per_cycle: 4
+  italy:
+         batch_size: 150
+  german:
+          batch_size: 150
+
+  greece:
+          months_per_cycle: 4
+
+  holland:
+           months_per_cycle: 4
+  denmark:
+           months_per_cycle: 4
+  sweden:
+           months_per_cycle: 4
+  norway:
+           months_per_cycle: 4
+  turkey:
+           months_per_cycle: 4
+  russia:
+           months_per_cycle: 4
+  portugal:
+            months_per_cycle: 4
+  belgium:
+           months_per_cycle: 4
+
+
+ match_goals:
+  default:
+          batch_size: 100
+          steps: 1000
+          months_per_cycle: 2
+          start_day: 1
+          start_month: 8
+          start_year: 2009
+          end_day: 26
+          end_month: 10
+          end_year: 2018
+          hash_bins: 10000
+          hidden_units: [10, 20, 10]
+          aws_debug: False
+          historic: False
+          evaluate: False
+
+  england:
+          batch_size: 250
+          months_per_cycle: 4
+          hash_bins: 25000
+          hidden_units: [10, 20, 10]
+          historic: False
+          evaluate: False
+
+  spain:
+         batch_size: 150
+         historic: False
+         evaluate: False
+
+  france:
+          batch_size: 150
+          historic: False
+          evaluate: False
+  scotland:
+            batch_size: 200
+            months_per_cycle: 4
+            historic: False
+            evaluate: False
+  italy:
+         batch_size: 150
+         historic: False
+         evaluate: False
+  german:
+          batch_size: 150
+          historic: False
+          evaluate: False
+  greece:
+          months_per_cycle: 4
+
+  holland:
+           months_per_cycle: 4
+           historic: False
+           evaluate: False
+  denmark:
+           months_per_cycle: 4
+  sweden:
+           months_per_cycle: 4
+           historic: False
+           evaluate: False
+  norway:
+           months_per_cycle: 4
+  turkey:
+           months_per_cycle: 4
+           historic: False
+           evaluate: False
+  russia:
+           months_per_cycle: 4
+  portugal:
+            months_per_cycle: 4
+            historic: False
+            evaluate: False
+  belgium:
+           months_per_cycle: 4
+           historic: False
+           evaluate: False
+
+
+
+ player_goals:
+  player:
+           batch_size: 100
+           steps: 1000
+           months_per_cycle: 4
+           start_day: 1
+           start_month: 1
+           start_year: 2012
+           end_day: 14
+           end_month: 7
+           end_year: 2018
+           hash_bins: 25000
+           hidden_units: [10, 20, 10]
+           aws_debug: False
+           historic: True
+
+
+vocab:
+ team_vocab_url: ":8090/api/prediction/teams"
+ player_by_country_vocab_url: ":8090/api/prediction/players/by-country-dict"
+ player_vocab_url: ":8090/api/prediction/players/by-player-dict"
+
+analysis: 
+ player_model_url: ":8090/api/prediction/ml-data/players/player/"
+ team_model_url: ":8090/api/prediction/ml-data/competition/"
+ types_url: ":8090/api/prediction/cache/types"
+ countries_url: ":8090/api/prediction/cache/countries"
+ players_by_team_url: ":8090/api/prediction/teams/<team>/players"
+ comps_by_country_url: ":8090/api/prediction/cache/competition-count"
+
+receipt:
+ train_receipt_url: ":8090/api/prediction/ml-data/train/receipt"
+ predict_receipt_url: ":8090/api/prediction/ml-data/predict/receipt"
+
+
+auth:
+ username: ""
+ password: ""
+ url: "http://ip-172-31-19-54.ec2.internal:8091/api/prediction/authenticate"
