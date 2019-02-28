@@ -2147,3 +2147,20 @@ ModuleNotFoundError: No module named 'predictor_api'
 [2019-02-18 21:08:10 +0000] [8146] [INFO] Listening at: http://127.0.0.1:5000 (8146)
 [2019-02-18 21:08:10 +0000] [8146] [INFO] Using worker: sync
 [2019-02-18 21:08:10 +0000] [8149] [INFO] Booting worker with pid: 8149
+[2019-02-19 07:33:42 +0000] [8146] [INFO] Handling signal: term
+[2019-02-19 07:33:42 +0000] [8146] [INFO] Shutting down: Master
+[2019-02-21 19:00:37 +0000] [2319] [INFO] Starting gunicorn 19.9.0
+[2019-02-21 19:00:37 +0000] [2319] [INFO] Listening at: http://127.0.0.1:5000 (2319)
+[2019-02-21 19:00:37 +0000] [2319] [INFO] Using worker: sync
+[2019-02-21 19:00:37 +0000] [2322] [INFO] Booting worker with pid: 2322
+[2019-02-22 07:44:22 +0000] [2319] [INFO] Handling signal: hup
+[2019-02-22 07:44:22 +0000] [2319] [INFO] Hang up: Master
+[2019-02-22 07:44:22 +0000] [2319] [INFO] Handling signal: term
+[2019-02-22 07:44:22 +0000] [23323] [INFO] Booting worker with pid: 23323
+[2019-02-22 07:44:52 +0000] [2319] [INFO] Shutting down: Master
+[2019-02-25 19:51:01 +0000] [2349] [INFO] Starting gunicorn 19.9.0
+[2019-02-25 19:51:01 +0000] [2349] [INFO] Listening at: http://127.0.0.1:5000 (2349)
+[2019-02-25 19:51:01 +0000] [2349] [INFO] Using worker: sync
+[2019-02-25 19:51:01 +0000] [2352] [INFO] Booting worker with pid: 2352
+[2019-02-26 07:38:55 +0000] [2349] [INFO] Handling signal: term
+[2019-02-26 07:38:55 +0000] [2349] [INFO] Shutting down: Master
