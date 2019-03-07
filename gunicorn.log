@@ -2164,3 +2164,15 @@ ModuleNotFoundError: No module named 'predictor_api'
 [2019-02-25 19:51:01 +0000] [2352] [INFO] Booting worker with pid: 2352
 [2019-02-26 07:38:55 +0000] [2349] [INFO] Handling signal: term
 [2019-02-26 07:38:55 +0000] [2349] [INFO] Shutting down: Master
+[2019-02-28 19:32:33 +0000] [6370] [INFO] Starting gunicorn 19.9.0
+[2019-02-28 19:32:33 +0000] [6370] [INFO] Listening at: http://127.0.0.1:5000 (6370)
+[2019-02-28 19:32:33 +0000] [6370] [INFO] Using worker: sync
+[2019-02-28 19:32:33 +0000] [6373] [INFO] Booting worker with pid: 6373
+[2019-03-01 08:19:46 +0000] [6370] [INFO] Handling signal: term
+[2019-03-01 08:19:46 +0000] [6370] [INFO] Shutting down: Master
+[2019-03-04 19:26:03 +0000] [2680] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 19:26:03 +0000] [2680] [INFO] Listening at: http://127.0.0.1:5000 (2680)
+[2019-03-04 19:26:03 +0000] [2680] [INFO] Using worker: sync
+[2019-03-04 19:26:03 +0000] [2683] [INFO] Booting worker with pid: 2683
+[2019-03-05 09:16:37 +0000] [2680] [INFO] Handling signal: term
+[2019-03-05 09:16:37 +0000] [2680] [INFO] Shutting down: Master
