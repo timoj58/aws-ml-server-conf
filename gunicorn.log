@@ -2499,3 +2499,163 @@ ModuleNotFoundError: No module named 'predictor_api'
 [2019-07-30 07:31:07 +0000] [1883] [INFO] Handling signal: term
 [2019-07-30 07:31:07 +0000] [3069] [INFO] Booting worker with pid: 3069
 [2019-07-30 07:31:38 +0000] [1883] [INFO] Shutting down: Master
+[2019-07-30 18:33:17 +0000] [1924] [INFO] Starting gunicorn 19.9.0
+[2019-07-30 18:33:17 +0000] [1924] [INFO] Listening at: http://127.0.0.1:5000 (1924)
+[2019-07-30 18:33:17 +0000] [1924] [INFO] Using worker: sync
+[2019-07-30 18:33:17 +0000] [1927] [INFO] Booting worker with pid: 1927
+[2019-07-30 18:52:31 +0000] [2094] [INFO] Starting gunicorn 19.9.0
+[2019-07-30 18:52:31 +0000] [2094] [INFO] Listening at: http://127.0.0.1:5000 (2094)
+[2019-07-30 18:52:31 +0000] [2094] [INFO] Using worker: sync
+[2019-07-30 18:52:31 +0000] [2097] [INFO] Booting worker with pid: 2097
+[2019-07-30 19:20:22 +0000] [2094] [INFO] Handling signal: term
+[2019-07-30 19:20:22 +0000] [2094] [INFO] Shutting down: Master
+[2019-07-31 07:58:40 +0000] [1719] [INFO] Starting gunicorn 19.9.0
+[2019-07-31 07:58:40 +0000] [1719] [INFO] Listening at: http://127.0.0.1:5000 (1719)
+[2019-07-31 07:58:40 +0000] [1719] [INFO] Using worker: sync
+[2019-07-31 07:58:40 +0000] [1722] [INFO] Booting worker with pid: 1722
+[2019-07-31 08:39:08 +0000] [2195] [INFO] Starting gunicorn 19.9.0
+[2019-07-31 08:39:08 +0000] [2195] [INFO] Listening at: http://127.0.0.1:5000 (2195)
+[2019-07-31 08:39:08 +0000] [2195] [INFO] Using worker: sync
+[2019-07-31 08:39:08 +0000] [2198] [INFO] Booting worker with pid: 2198
+[2019-07-31 08:39:08 +0000] [2198] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+ModuleNotFoundError: No module named 'predictor_api'
+[2019-07-31 08:39:08 +0000] [2198] [INFO] Worker exiting (pid: 2198)
+[2019-07-31 08:39:08 +0000] [2195] [INFO] Shutting down: Master
+[2019-07-31 08:39:08 +0000] [2195] [INFO] Reason: Worker failed to boot.
+[2019-07-31 08:40:27 +0000] [2286] [INFO] Starting gunicorn 19.9.0
+[2019-07-31 08:40:27 +0000] [2286] [INFO] Listening at: http://127.0.0.1:5000 (2286)
+[2019-07-31 08:40:27 +0000] [2286] [INFO] Using worker: sync
+[2019-07-31 08:40:27 +0000] [2289] [INFO] Booting worker with pid: 2289
+[2019-07-31 09:13:18 +0000] [2286] [INFO] Handling signal: term
+[2019-07-31 09:13:18 +0000] [2289] [INFO] Worker exiting (pid: 2289)
+[2019-07-31 09:13:18 +0000] [2286] [INFO] Shutting down: Master
+[2019-08-01 17:00:53 +0000] [2279] [INFO] Starting gunicorn 19.9.0
+[2019-08-01 17:00:53 +0000] [2279] [INFO] Listening at: http://127.0.0.1:5000 (2279)
+[2019-08-01 17:00:53 +0000] [2279] [INFO] Using worker: sync
+[2019-08-01 17:00:53 +0000] [2282] [INFO] Booting worker with pid: 2282
+[2019-08-01 18:13:15 +0000] [2279] [INFO] Handling signal: term
+[2019-08-01 18:13:15 +0000] [2279] [INFO] Shutting down: Master
+[2019-08-02 16:47:44 +0000] [1913] [INFO] Starting gunicorn 19.9.0
+[2019-08-02 16:47:44 +0000] [1913] [INFO] Listening at: http://127.0.0.1:5000 (1913)
+[2019-08-02 16:47:44 +0000] [1913] [INFO] Using worker: sync
+[2019-08-02 16:47:44 +0000] [1916] [INFO] Booting worker with pid: 1916
+[2019-08-02 18:24:01 +0000] [9820] [INFO] Starting gunicorn 19.9.0
+[2019-08-02 18:24:01 +0000] [9820] [INFO] Listening at: http://127.0.0.1:5000 (9820)
+[2019-08-02 18:24:01 +0000] [9820] [INFO] Using worker: sync
+[2019-08-02 18:24:01 +0000] [9823] [INFO] Booting worker with pid: 9823
+[2019-08-02 19:49:20 +0000] [9820] [INFO] Handling signal: term
+[2019-08-02 19:49:21 +0000] [9820] [INFO] Shutting down: Master
+[2019-08-02 19:53:58 +0000] [1492] [INFO] Starting gunicorn 19.9.0
+[2019-08-02 19:53:58 +0000] [1492] [INFO] Listening at: http://127.0.0.1:5000 (1492)
+[2019-08-02 19:53:58 +0000] [1492] [INFO] Using worker: sync
+[2019-08-02 19:53:58 +0000] [1495] [INFO] Booting worker with pid: 1495
+[2019-08-02 22:18:53 +0000] [31166] [INFO] Starting gunicorn 19.9.0
+[2019-08-02 22:18:53 +0000] [31166] [INFO] Listening at: http://127.0.0.1:5000 (31166)
+[2019-08-02 22:18:53 +0000] [31166] [INFO] Using worker: sync
+[2019-08-02 22:18:53 +0000] [31169] [INFO] Booting worker with pid: 31169
+[2019-08-03 07:50:02 +0000] [25772] [INFO] Starting gunicorn 19.9.0
+[2019-08-03 07:50:02 +0000] [25772] [INFO] Listening at: http://127.0.0.1:5000 (25772)
+[2019-08-03 07:50:02 +0000] [25772] [INFO] Using worker: sync
+[2019-08-03 07:50:02 +0000] [25775] [INFO] Booting worker with pid: 25775
+[2019-08-03 10:37:21 +0000] [25772] [INFO] Handling signal: hup
+[2019-08-03 10:37:21 +0000] [25772] [INFO] Hang up: Master
+[2019-08-03 10:37:21 +0000] [25772] [INFO] Handling signal: term
+[2019-08-03 10:37:21 +0000] [3326] [INFO] Booting worker with pid: 3326
+[2019-08-03 10:37:51 +0000] [25772] [INFO] Shutting down: Master
+[2019-08-05 20:22:43 +0000] [2381] [INFO] Starting gunicorn 19.9.0
+[2019-08-05 20:22:43 +0000] [2381] [INFO] Listening at: http://127.0.0.1:5000 (2381)
+[2019-08-05 20:22:43 +0000] [2381] [INFO] Using worker: sync
+[2019-08-05 20:22:43 +0000] [2384] [INFO] Booting worker with pid: 2384
+[2019-08-06 06:50:00 +0000] [2381] [INFO] Handling signal: term
+[2019-08-06 06:50:00 +0000] [2381] [INFO] Shutting down: Master
+[2019-08-08 20:20:41 +0000] [1868] [INFO] Starting gunicorn 19.9.0
+[2019-08-08 20:20:41 +0000] [1868] [INFO] Listening at: http://127.0.0.1:5000 (1868)
+[2019-08-08 20:20:41 +0000] [1868] [INFO] Using worker: sync
+[2019-08-08 20:20:41 +0000] [1871] [INFO] Booting worker with pid: 1871
+[2019-08-09 09:29:18 +0000] [1868] [INFO] Handling signal: hup
+[2019-08-09 09:29:18 +0000] [1868] [INFO] Hang up: Master
+[2019-08-09 09:29:18 +0000] [1868] [INFO] Handling signal: term
+[2019-08-09 09:29:18 +0000] [17564] [INFO] Booting worker with pid: 17564
+[2019-08-09 09:29:48 +0000] [1868] [INFO] Shutting down: Master
+[2019-08-09 12:44:25 +0000] [1456] [INFO] Starting gunicorn 19.9.0
+[2019-08-09 12:44:25 +0000] [1456] [INFO] Listening at: http://127.0.0.1:5000 (1456)
+[2019-08-09 12:44:25 +0000] [1456] [INFO] Using worker: sync
+[2019-08-09 12:44:25 +0000] [1459] [INFO] Booting worker with pid: 1459
+[2019-08-09 12:58:41 +0000] [2218] [INFO] Starting gunicorn 19.9.0
+[2019-08-09 12:58:41 +0000] [2218] [INFO] Listening at: http://127.0.0.1:5000 (2218)
+[2019-08-09 12:58:41 +0000] [2218] [INFO] Using worker: sync
+[2019-08-09 12:58:41 +0000] [2221] [INFO] Booting worker with pid: 2221
+[2019-08-09 13:05:46 +0000] [2962] [INFO] Starting gunicorn 19.9.0
+[2019-08-09 13:05:46 +0000] [2962] [INFO] Listening at: http://127.0.0.1:5000 (2962)
+[2019-08-09 13:05:46 +0000] [2962] [INFO] Using worker: sync
+[2019-08-09 13:05:46 +0000] [2965] [INFO] Booting worker with pid: 2965
+[2019-08-09 13:11:30 +0000] [2965] [INFO] Parent changed, shutting down: <Worker 2965>
+[2019-08-09 13:11:30 +0000] [2965] [INFO] Worker exiting (pid: 2965)
+[2019-08-09 13:12:02 +0000] [3794] [INFO] Starting gunicorn 19.9.0
+[2019-08-09 13:12:02 +0000] [3794] [INFO] Listening at: http://127.0.0.1:5000 (3794)
+[2019-08-09 13:12:02 +0000] [3794] [INFO] Using worker: sync
+[2019-08-09 13:12:02 +0000] [3797] [INFO] Booting worker with pid: 3797
+[2019-08-09 14:33:07 +0000] [3794] [INFO] Handling signal: hup
+[2019-08-09 14:33:07 +0000] [3794] [INFO] Hang up: Master
+[2019-08-09 14:33:07 +0000] [3794] [INFO] Handling signal: term
+[2019-08-09 14:33:07 +0000] [7838] [INFO] Booting worker with pid: 7838
+[2019-08-09 14:33:37 +0000] [3794] [INFO] Shutting down: Master
+[2019-08-12 21:46:20 +0000] [2313] [INFO] Starting gunicorn 19.9.0
+[2019-08-12 21:46:20 +0000] [2313] [INFO] Listening at: http://127.0.0.1:5000 (2313)
+[2019-08-12 21:46:20 +0000] [2313] [INFO] Using worker: sync
+[2019-08-12 21:46:20 +0000] [2316] [INFO] Booting worker with pid: 2316
+[2019-08-13 06:22:57 +0000] [2313] [INFO] Handling signal: term
+[2019-08-13 06:22:57 +0000] [2313] [INFO] Shutting down: Master
+[2019-08-15 10:48:37 +0000] [7952] [INFO] Starting gunicorn 19.9.0
+[2019-08-15 10:48:37 +0000] [7952] [INFO] Listening at: http://127.0.0.1:5000 (7952)
+[2019-08-15 10:48:37 +0000] [7952] [INFO] Using worker: sync
+[2019-08-15 10:48:37 +0000] [7955] [INFO] Booting worker with pid: 7955
+[2019-08-16 08:11:56 +0000] [7952] [INFO] Handling signal: term
+[2019-08-16 08:11:56 +0000] [7952] [INFO] Shutting down: Master
+[2019-08-19 21:13:23 +0000] [2466] [INFO] Starting gunicorn 19.9.0
+[2019-08-19 21:13:23 +0000] [2466] [INFO] Listening at: http://127.0.0.1:5000 (2466)
+[2019-08-19 21:13:23 +0000] [2466] [INFO] Using worker: sync
+[2019-08-19 21:13:23 +0000] [2469] [INFO] Booting worker with pid: 2469
+[2019-08-20 07:00:15 +0000] [2466] [INFO] Handling signal: term
+[2019-08-20 07:00:15 +0000] [2466] [INFO] Shutting down: Master
+[2019-08-22 22:20:28 +0000] [2034] [INFO] Starting gunicorn 19.9.0
+[2019-08-22 22:20:28 +0000] [2034] [INFO] Listening at: http://127.0.0.1:5000 (2034)
+[2019-08-22 22:20:28 +0000] [2034] [INFO] Using worker: sync
+[2019-08-22 22:20:28 +0000] [2037] [INFO] Booting worker with pid: 2037
+[2019-08-23 09:20:10 +0000] [2034] [INFO] Handling signal: term
+[2019-08-23 09:20:10 +0000] [2034] [INFO] Shutting down: Master
+[2019-08-26 21:28:43 +0000] [1865] [INFO] Starting gunicorn 19.9.0
+[2019-08-26 21:28:43 +0000] [1865] [INFO] Listening at: http://127.0.0.1:5000 (1865)
+[2019-08-26 21:28:43 +0000] [1865] [INFO] Using worker: sync
+[2019-08-26 21:28:43 +0000] [1868] [INFO] Booting worker with pid: 1868
+[2019-08-27 07:11:42 +0000] [1865] [INFO] Handling signal: term
+[2019-08-27 07:11:42 +0000] [1865] [INFO] Shutting down: Master
+[2019-08-27 09:54:59 +0000] [1916] [INFO] Starting gunicorn 19.9.0
+[2019-08-27 09:54:59 +0000] [1916] [INFO] Listening at: http://127.0.0.1:5000 (1916)
+[2019-08-27 09:54:59 +0000] [1916] [INFO] Using worker: sync
+[2019-08-27 09:54:59 +0000] [1919] [INFO] Booting worker with pid: 1919
+[2019-08-27 10:13:59 +0000] [1919] [INFO] Parent changed, shutting down: <Worker 1919>
+[2019-08-27 10:13:59 +0000] [1919] [INFO] Worker exiting (pid: 1919)
+[2019-08-27 10:14:32 +0000] [1996] [INFO] Starting gunicorn 19.9.0
+[2019-08-27 10:14:32 +0000] [1996] [INFO] Listening at: http://127.0.0.1:5000 (1996)
+[2019-08-27 10:14:32 +0000] [1996] [INFO] Using worker: sync
+[2019-08-27 10:14:32 +0000] [1999] [INFO] Booting worker with pid: 1999
+[2019-08-27 12:02:21 +0000] [5577] [INFO] Starting gunicorn 19.9.0
+[2019-08-27 12:02:21 +0000] [5577] [INFO] Listening at: http://127.0.0.1:5000 (5577)
+[2019-08-27 12:02:21 +0000] [5577] [INFO] Using worker: sync
+[2019-08-27 12:02:21 +0000] [5580] [INFO] Booting worker with pid: 5580

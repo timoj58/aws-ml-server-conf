@@ -22,14 +22,14 @@ learning:
           start_day: 1
           start_month: 8
           start_year: 2009
-          end_day: 26
-          end_month: 10
-          end_year: 2018
+          end_day: 29
+          end_month: 7
+          end_year: 2019
           hash_bins: 10000
           hidden_units: [10, 20, 10]
           aws_debug: False
-          historic: False
-          evaluate: False
+          historic: True
+          evaluate: True
 
   england:
           batch_size: 250
@@ -42,21 +42,15 @@ learning:
 
   france:
          batch_size: 150
-         historic: False
-         evaluate: False
 
   scotland:
            batch_size: 200
            months_per_cycle: 4
   italy:
         batch_size: 150
-        historic: False
-        evaluate: False
 
   german:
          batch_size: 150
-         historic: False
-         evaluate: False
  
   greece:
          months_per_cycle: 4
@@ -87,14 +81,14 @@ learning:
           start_day: 1
           start_month: 8
           start_year: 2009
-          end_day: 26
-          end_month: 10
-          end_year: 2018
+          end_day: 29
+          end_month: 7
+          end_year: 2019
           hash_bins: 10000
           hidden_units: [10, 20, 10]
           aws_debug: False
-          historic: False
-          evaluate: False
+          historic: True
+          evaluate: True
 
   england:
           batch_size: 250
@@ -145,74 +139,52 @@ learning:
           start_day: 1
           start_month: 8
           start_year: 2009
-          end_day: 26
-          end_month: 10
-          end_year: 2018
+          end_day: 29
+          end_month: 7
+          end_year: 2019
           hash_bins: 10000
           hidden_units: [10, 20, 10]
           aws_debug: False
-          historic: False
-          evaluate: False
+          historic: True
+          evaluate: True
 
   england:
           batch_size: 250
           months_per_cycle: 4
           hash_bins: 25000
           hidden_units: [10, 20, 10]
-          historic: False
-          evaluate: False
 
   spain:
          batch_size: 150
-         historic: False
-         evaluate: False
 
   france:
           batch_size: 150
-          historic: False
-          evaluate: False
   scotland:
             batch_size: 200
             months_per_cycle: 4
-            historic: False
-            evaluate: False
   italy:
          batch_size: 150
-         historic: False
-         evaluate: False
   german:
           batch_size: 150
-          historic: False
-          evaluate: False
   greece:
           months_per_cycle: 4
 
   holland:
            months_per_cycle: 4
-           historic: False
-           evaluate: False
   denmark:
            months_per_cycle: 4
   sweden:
            months_per_cycle: 4
-           historic: False
-           evaluate: False
   norway:
            months_per_cycle: 4
   turkey:
            months_per_cycle: 4
-           historic: False
-           evaluate: False
   russia:
            months_per_cycle: 4
   portugal:
             months_per_cycle: 4
-            historic: False
-            evaluate: False
   belgium:
            months_per_cycle: 4
-           historic: False
-           evaluate: False
 
 
 
